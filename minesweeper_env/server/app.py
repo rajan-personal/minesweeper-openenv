@@ -73,7 +73,7 @@ def get_state():
     return env.state.model_dump()
 
 
-def run():
+def main():
     import uvicorn
     uvicorn.run(
         "minesweeper_env.server.app:app",
