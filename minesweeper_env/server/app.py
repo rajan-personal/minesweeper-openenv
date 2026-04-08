@@ -71,3 +71,12 @@ def step(request: StepRequest):
 @app.get("/state")
 def get_state():
     return env.state.model_dump()
+
+
+def run():
+    import uvicorn
+    uvicorn.run(
+        "minesweeper_env.server.app:app",
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 8000)),
+    )
