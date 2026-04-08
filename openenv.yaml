@@ -1,0 +1,13 @@
+title: Minesweeper OpenEnv
+emoji: "\U0001F4A3"
+colorFrom: gray
+colorTo: red
+sdk: docker
+pinned: false
+app_port: 8000
+tags:
+  - openenv
+  - minesweeper
+  - puzzle
+  - logic
+  - deduction
